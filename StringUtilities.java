@@ -45,12 +45,19 @@ public class StringUtilities {
      */
     public String removeCharacter(String value, Character charToRemove) {
         int i =0;
-        int k = value.length();
-        while (i<=k);{
-        if (value.charAt(i))equals(charToRemove);
-        {value.replace((value.charAt(i)), "");}}
+        int count = value.length();
+        while (i<=count);{
         
-    }//string is immutable. you have to make a new string.
+        char[] newArray = new char[value.length()]; 
+  
+        for (int j = 0; j < value.length(); j++) 
+        newArray[j] = value.charAt(j); }
+    
+        for (int k = 0; k < value.length(); k++);
+        return null;}
+        // if(newArray.charAt(k))equals(charToRemove);
+        //replace((newArray.charAt(k)), "");
+    
 
     /**
      * @param sentence String delimited by spaces representative of a sentence

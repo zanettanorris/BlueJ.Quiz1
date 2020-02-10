@@ -10,7 +10,12 @@ public class LoopFun
        * @return the factorial of the number
        */
       public Integer factorial(Integer number){
-          return null;
+          int i = 1;
+          int factorial = 1;
+          for(i =1; i<=number; i++){
+          factorial = factorial*i;}
+         
+          return factorial;
       }
 
       /**
@@ -21,8 +26,18 @@ public class LoopFun
        * @return Upper case string of the first letter of each word
        */
       public String acronym(String phrase) {
-          return null;
+          String result;
+          StringBuilder acronym = new StringBuilder();
+          acronym.append (phrase.charAt(0));
+          for(int count = 0; count < phrase.length(); count++)
+           if(phrase.charAt(count) == ' ') {  
+                ++count;
+          acronym.append(phrase.charAt(count));
+        } 
+          {return (acronym.toString().toUpperCase());}
       }
+    
+
 
       /**
        * To prevent anyone from reading our messages, we can encrypt it so it will only be readable by its
